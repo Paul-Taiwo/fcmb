@@ -100,9 +100,11 @@
     flex: 1 1 auto;
     padding: 19px 24px;
   }
+
   .card.liquidate-body-right {
     height: 280px !important;
-}
+  }
+
   .card-header {
     font-family: 'Inter', sans-serif !important;
     font-style: normal;
@@ -161,7 +163,8 @@
     padding-bottom: 2px;
     padding-top: 0;
   }
-  input.money::::placeholder{
+
+  input.money::::placeholder {
     color: #857F7F;
   }
 
@@ -446,7 +449,7 @@
                   <div class="m-dropdown__wrapper">
                     <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
                     <div class="m-dropdown__inner">
-                      <div class="m-dropdown__header m--align-center">
+                      <div class="m-dropdown__header h-dropdown__header m--align-center">
                         <div class="m-card-user m-card-user--skin-light">
                           <div class="m-card-user__pic">
                             <img src="custom/bolanle.png" class="m--img-rounded m--marginless" alt="" />
@@ -458,10 +461,13 @@
                           </div>
                         </div>
                       </div>
-                      <div class="m-dropdown__body">
+                      <div class="m-dropdown__body h-dropdown__body">
                         <div class="m-dropdown__content">
                           <ul class="m-nav m-nav--skin-light">
-                            <li class="m-nav__section m--hide"><span class="m-nav__section-text">Section</span></li>
+                            <li class="m-nav__section h-nav__section">
+                              <a class="m-card-user__email m--font-weight-300 h-dropdown__text m-link"
+                                href="profile.html">My Profile</a>
+                            </li>
                             <li class="m-nav__item">
                               <a href="#"
                                 class="btn m-btn--pill btn-secondary
@@ -789,8 +795,8 @@
     //   }
 
     firstInput.addEventListener('focus', function () {
-        checksvga.style.display = 'none';
-        checksvgaa.style.display = 'block';
+      checksvga.style.display = 'none';
+      checksvgaa.style.display = 'block';
     })
     secondInput.addEventListener('focus', function () {
       checksvgb.style.display = 'none';

@@ -11,6 +11,34 @@
   }
 }
 
+.h-dropdown__header {
+  padding-bottom: 0px !important;
+}
+
+.h-nav__section {
+  margin-bottom: 30px !important;
+}
+
+.h-dropdown__body {
+  padding-top: 0px !important;
+}
+
+.h-dropdown__text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #222121;
+}
+
+.h-dropdown__text:hover {
+  color: #222121;
+}
+
+.h-dropdown__text:hover:after {
+  border-bottom: 1px solid #27282c;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
 #fcmb .savings-onboarding .buttons {
   text-align: right;
 }

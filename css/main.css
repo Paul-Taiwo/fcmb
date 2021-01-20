@@ -75,7 +75,7 @@ a {
 }
 
 .svg-button span:before {
-  content: '';
+  content: "";
   height: 65px;
   width: 65px;
   border: 1px dashed grey;
@@ -113,7 +113,7 @@ a {
   font-size: 16px;
 }
 
-#header>.container {
+#header > .container {
   display: flex;
 }
 
@@ -151,7 +151,7 @@ a {
 }
 
 #header .site-description h1 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 20px;
   line-height: 32px;
   margin: 0;
@@ -172,7 +172,7 @@ a {
 }
 
 #header nav#navigation ul li {
-  transition: all .25s;
+  transition: all 0.25s;
   margin: 0 10px;
   border-radius: 4px;
   position: relative;
@@ -201,7 +201,7 @@ a {
   right: 40px;
   cursor: pointer;
   transition: 0.2s all ease-in;
-  background: #FFFFFF url("../img/caret-right.svg") top 12px left 15px/10px no-repeat;
+  background: #ffffff url("../img/caret-right.svg") top 12px left 15px/10px no-repeat;
   outline: none !important;
 }
 
@@ -340,7 +340,7 @@ a {
   font-weight: bold;
   line-height: normal;
   font-size: 40px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
@@ -370,7 +370,7 @@ a {
 }
 
 .home-banner .entry-content p {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 20px;
   opacity: 0.5;
   margin-bottom: 5px;
@@ -405,12 +405,12 @@ a {
       top: -4px;
       width: 100%;
       /* background: url(../img/purple-ball.svg); */
-height: 100%;
+/* height: 100%;
 background-repeat: no-repeat;
 right: 0;
 background-position: right top;
 background-position-y: 100px;
-}
+} */
 
 .savings-features.wavy-div .background:nth-child(2) {
   top: 10px;
@@ -448,7 +448,7 @@ background-position-y: 100px;
   left: 0;
   width: 100%;
   height: 25%;
-  content: '';
+  content: "";
 }
 
 .swiper-container-savings .savings-type .description {
@@ -457,7 +457,7 @@ background-position-y: 100px;
   align-items: center;
   display: flex;
   padding: 0 10%;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 20px;
   line-height: 38px;
   font-weight: bold;
@@ -474,7 +474,7 @@ background-position-y: 100px;
   display: flex;
   transition: 0.2s all ease-in-out;
   cursor: pointer;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   justify-content: center;
 }
 
@@ -484,7 +484,7 @@ background-position-y: 100px;
 
 .savings-calculator-wrapper {
   z-index: 6;
-  background: #FFFFFF;
+  background: #ffffff;
   /* position: absolute; */
   margin-top: -50px !important;
   display: block;
@@ -551,7 +551,7 @@ background-position-y: 100px;
 .savings-calculator .savings-calculator-progress .bars span {
   width: 35px;
   height: 5px;
-  background: #C4C4C4;
+  background: #c4c4c4;
   margin-left: 5px;
   border-radius: 5px;
 }
@@ -576,8 +576,10 @@ background-position-y: 100px;
   padding-top: 100px;
   justify-content: center;
   align-items: center;
-  color: #FFFFFF;
-  background: url("../img/controller.png") top 260px left 0px/260px no-repeat, url("../img/laptop.png") top -20px right 0px/300px no-repeat, url("../img/save-easy.png") top 0px left 50px/650px no-repeat;
+  color: #ffffff;
+  background: url("../img/controller.png") top 260px left 0px/260px no-repeat,
+    url("../img/laptop.png") top -20px right 0px/300px no-repeat,
+    url("../img/save-easy.png") top 0px left 50px/650px no-repeat;
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
@@ -623,7 +625,7 @@ background-position-y: 100px;
   }
 }
 
-.awesome-features-content>div {
+.awesome-features-content > div {
   flex: 1;
   padding: 20px;
 }
@@ -695,7 +697,10 @@ background-position-y: 100px;
 .user-stories {
   position: relative;
   padding-top: 150px;
-  background: url("../img/watch.png") top -50px right 0px/260px no-repeat, url("../img/camera.png") top 650px left 0px/360px no-repeat, url("../img/set_goals.png") top 850px left 0px/650px no-repeat, url("../img/tape.png") bottom -80px right 0px/260px no-repeat;
+  background: url("../img/watch.png") top -50px right 0px/260px no-repeat,
+    url("../img/camera.png") top 650px left 0px/360px no-repeat,
+    url("../img/set_goals.png") top 850px left 0px/650px no-repeat,
+    url("../img/tape.png") bottom -80px right 0px/260px no-repeat;
   height: 1450px;
   padding-bottom: 20px;
 }
@@ -754,7 +759,7 @@ background-position-y: 100px;
   display: flex;
   justify-content: center;
   padding: 35px;
-  color: #FFFFFF;
+  color: #ffffff;
   flex-direction: column;
   overflow: hidden;
   -webkit-box-shadow: 0 9px 20px 0 rgba(0, 0, 0, 0.2);
@@ -776,7 +781,7 @@ background-position-y: 100px;
 }
 
 .user-stories .user-story:before {
-  content: '';
+  content: "";
   position: absolute;
   background: url("../img/q-marks-2.svg") no-repeat;
   bottom: -10px;
@@ -786,7 +791,7 @@ background-position-y: 100px;
 }
 
 .user-stories .user-story:after {
-  content: '';
+  content: "";
   position: absolute;
   background: url("../img/quotation-mark.svg") no-repeat;
   top: 55px;
@@ -807,7 +812,7 @@ background-position-y: 100px;
 }
 
 .user-stories .swiper-pagination-user-stories .swiper-pagination-bullet-active {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .user-stories-content {
@@ -843,11 +848,10 @@ background-position-y: 100px;
 
 .user-stories-content h3,
 .user-stories-content p {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
-
   .user-stories-content h3,
   .user-stories-content p {
     text-align: center;
@@ -938,7 +942,7 @@ background-position-y: 100px;
 }
 
 .subscription-box:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -949,48 +953,48 @@ background-position-y: 100px;
   z-index: -1;
 }
 
-.subscription-box>div {
+.subscription-box > div {
   padding: 0 10px;
   flex: 2;
 }
 
-.subscription-box>div:last-child {
+.subscription-box > div:last-child {
   flex: 1;
   text-align: right;
 }
 
-.subscription-box>div h3 {
+.subscription-box > div h3 {
   font-size: 20px;
   line-height: 30px;
   color: #c322a4;
   font-weight: bold;
 }
 
-.subscription-box>div form {
+.subscription-box > div form {
   display: flex;
   flex-direction: column;
 }
 
-.subscription-box>div form label {
+.subscription-box > div form label {
   font-size: 14px;
   line-height: 23px;
-  color: #746D6D;
+  color: #746d6d;
 }
 
-.subscription-box>div form input {
+.subscription-box > div form input {
   border: none;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #e0e0e0;
   outline: none !important;
   transition: 0.3s all;
   background: transparent;
 }
 
-.subscription-box>div form input:focus {
+.subscription-box > div form input:focus {
   border-color: #c322a4;
 }
 
 #onboarding {
-  background: #B92199;
+  background: #b92199;
   position: relative;
   min-height: 100vh;
 }
@@ -1031,7 +1035,7 @@ background-position-y: 100px;
 }
 
 #onboarding .wrapper .logo h3 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   line-height: 27px;
   margin: 0;
@@ -1110,7 +1114,7 @@ background-position-y: 100px;
   justify-content: center;
 }
 
-#onboarding .form .wrap.reset-password>* {
+#onboarding .form .wrap.reset-password > * {
   margin-bottom: 25px;
 }
 
@@ -1186,7 +1190,7 @@ background-position-y: 100px;
 
 #onboarding .background {
   position: relative;
-  background-image: linear-gradient(to right, #5C2684, #940096);
+  background-image: linear-gradient(to right, #5c2684, #940096);
   flex: 7;
   display: flex;
   justify-content: center;
@@ -1203,7 +1207,7 @@ background-position-y: 100px;
 }
 
 #onboarding .background h3 {
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   margin-top: 30px;
   font-size: 30px;
@@ -1316,34 +1320,34 @@ background-position-y: 100px;
   }
 }
 
-.onboarding-step>div {
+.onboarding-step > div {
   display: flex;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .onboarding-step>div {
+  .onboarding-step > div {
     width: 100%;
   }
 }
 
-.onboarding-step>div:first-child {
+.onboarding-step > div:first-child {
   flex: 2;
   flex-direction: column;
 }
 
-.onboarding-step>div:last-child {
+.onboarding-step > div:last-child {
   flex: 3;
   justify-content: flex-end;
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
-  .onboarding-step>div:last-child {
+  .onboarding-step > div:last-child {
     display: none;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .onboarding-step>div:last-child {
+  .onboarding-step > div:last-child {
     display: none;
   }
 }
@@ -1368,7 +1372,7 @@ background-position-y: 100px;
 .onboarding-step .instructions .text {
   flex: 1;
   padding: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 25px;
   line-height: 40px;
   position: absolute;
@@ -1432,7 +1436,7 @@ background-position-y: 100px;
   margin-right: 20px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #D3D3D3;
+  border: 1px solid #d3d3d3;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s all;
@@ -1440,17 +1444,17 @@ background-position-y: 100px;
 }
 
 .swiper-category-container .savings-category span {
-  color: #8B93A6;
+  color: #8b93a6;
   text-align: center;
   margin-top: 5px;
 }
 
 .swiper-category-container .savings-category svg path {
-  fill: #8B93A6 !important;
+  fill: #8b93a6 !important;
 }
 
 .swiper-category-container .savings-category::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 10px;
   left: 10px;
@@ -1494,7 +1498,7 @@ background-position-y: 100px;
   font-size: 14px;
   line-height: 23px;
   font-weight: 200;
-  color: #746D6D;
+  color: #746d6d;
 }
 
 .onboarding-form .field {
@@ -1507,22 +1511,22 @@ background-position-y: 100px;
   }
 }
 
-.onboarding-form input[type=number],
-.onboarding-form input[type=text] {
+.onboarding-form input[type="number"],
+.onboarding-form input[type="text"] {
   border: none;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #e0e0e0;
   border-radius: 0;
   padding-left: 0;
   padding-right: 0;
 }
 
-.onboarding-form input[type=number]:focus,
-.onboarding-form input[type=text]:focus {
+.onboarding-form input[type="number"]:focus,
+.onboarding-form input[type="text"]:focus {
   border-bottom: 1px solid #c322a4;
 }
 
 html.white-suimodal .ui.dimmer.suimodals {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 html.white-suimodal .savings-onboarding.suimodal {
@@ -1550,7 +1554,7 @@ html.white-suimodal .savings-onboarding.suimodal {
 }
 
 .savings-calculator.step-3 .savings-plans:after {
-  content: '';
+  content: "";
   position: absolute;
   background-position-x: 100px;
   bottom: 20px;
@@ -1559,24 +1563,24 @@ html.white-suimodal .savings-onboarding.suimodal {
   height: 100%;
 }
 
-.savings-calculator.step-3 .onboarding-step>h2,
-.savings-calculator.step-3 .onboarding-step>h4 {
+.savings-calculator.step-3 .onboarding-step > h2,
+.savings-calculator.step-3 .onboarding-step > h4 {
   margin-bottom: 20px;
   text-align: center;
 }
 
-.savings-calculator.step-3 .onboarding-step>h2 {
+.savings-calculator.step-3 .onboarding-step > h2 {
   font-size: 20px;
   line-height: 27px;
   font-weight: bold;
-  color: #19233C;
+  color: #19233c;
 }
 
-.savings-calculator.step-3 .onboarding-step>h4 {
+.savings-calculator.step-3 .onboarding-step > h4 {
   font-weight: 300;
   font-size: 14px;
   line-height: 23px;
-  color: #746D6D;
+  color: #746d6d;
 }
 
 .savings-calculator.step-3 .swiper-savings-plan-container {
@@ -1667,44 +1671,43 @@ html.white-suimodal .savings-onboarding.suimodal {
   font-size: 35px;
   font-weight: bold;
   line-height: 57px;
-  color: #4F4848;
+  color: #4f4848;
 }
 
 .savings-calculator.step-3 .savings-plan .details {
   flex: 1;
-  border-top: 1px solid #E5E6EB;
+  border-top: 1px solid #e5e6eb;
   display: flex;
   padding-top: 10px;
 }
 
-.savings-calculator.step-3 .savings-plan .details>div {
+.savings-calculator.step-3 .savings-plan .details > div {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.savings-calculator.step-3 .savings-plan .details>div.left {
+.savings-calculator.step-3 .savings-plan .details > div.left {
   align-items: flex-start;
 }
 
-.savings-calculator.step-3 .savings-plan .details>div.right {
+.savings-calculator.step-3 .savings-plan .details > div.right {
   align-items: flex-end;
 }
 
-.savings-calculator.step-3 .savings-plan .details>div span:first-child {
-  color: #4F4848;
+.savings-calculator.step-3 .savings-plan .details > div span:first-child {
+  color: #4f4848;
   font-size: 14px;
   line-height: 23px;
   font-weight: 400;
 }
 
-.savings-calculator.step-3 .savings-plan .details>div span:last-child {
-  color: #4F4848;
+.savings-calculator.step-3 .savings-plan .details > div span:last-child {
+  color: #4f4848;
   font-size: 12px;
   line-height: 20px;
   font-weight: 200;
 }
-
 
 /* .savings-calculator.step-4 {
   display: none; } */
@@ -1727,7 +1730,7 @@ html.white-suimodal .savings-onboarding.suimodal {
 }
 
 .savings-calculator.step-4 .savings-plans-2:after {
-  content: '';
+  content: "";
   position: absolute;
   background-position-x: 100px;
   bottom: 20px;
@@ -1736,24 +1739,24 @@ html.white-suimodal .savings-onboarding.suimodal {
   height: 100%;
 }
 
-.savings-calculator.step-4 .onboarding-step>h2,
-.savings-calculator.step-4 .onboarding-step>h4 {
+.savings-calculator.step-4 .onboarding-step > h2,
+.savings-calculator.step-4 .onboarding-step > h4 {
   margin-bottom: 20px;
   text-align: center;
 }
 
-.savings-calculator.step-4 .onboarding-step>h2 {
+.savings-calculator.step-4 .onboarding-step > h2 {
   font-size: 20px;
   line-height: 27px;
   font-weight: bold;
-  color: #19233C;
+  color: #19233c;
 }
 
-.savings-calculator.step-4 .onboarding-step>h4 {
+.savings-calculator.step-4 .onboarding-step > h4 {
   font-weight: 300;
   font-size: 14px;
   line-height: 23px;
-  color: #746D6D;
+  color: #746d6d;
 }
 
 .savings-calculator.step-4 .swiper-savings-plan-container {
@@ -1829,12 +1832,12 @@ html.white-suimodal .savings-onboarding.suimodal {
   font-size: 35px;
   font-weight: bold;
   line-height: 57px;
-  color: #4F4848;
+  color: #4f4848;
 }
 
 .savings-calculator.step-4 .savings-plan .details {
   flex: 1;
-  border-top: 1px solid #E5E6EB;
+  border-top: 1px solid #e5e6eb;
   display: flex;
   padding-top: 10px;
 }
@@ -1842,32 +1845,32 @@ html.white-suimodal .savings-onboarding.suimodal {
 .savings-calculator.step-4 .savings-plan .details p {
   font-size: 14px;
   line-height: 23px;
-  color: #4F4848;
+  color: #4f4848;
 }
 
-.savings-calculator.step-4 .savings-plan .details>div {
+.savings-calculator.step-4 .savings-plan .details > div {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.savings-calculator.step-4 .savings-plan .details>div.left {
+.savings-calculator.step-4 .savings-plan .details > div.left {
   align-items: flex-start;
 }
 
-.savings-calculator.step-4 .savings-plan .details>div.right {
+.savings-calculator.step-4 .savings-plan .details > div.right {
   align-items: flex-end;
 }
 
-.savings-calculator.step-4 .savings-plan .details>div span:first-child {
-  color: #4F4848;
+.savings-calculator.step-4 .savings-plan .details > div span:first-child {
+  color: #4f4848;
   font-size: 14px;
   line-height: 23px;
   font-weight: 400;
 }
 
-.savings-calculator.step-4 .savings-plan .details>div span:last-child {
-  color: #4F4848;
+.savings-calculator.step-4 .savings-plan .details > div span:last-child {
+  color: #4f4848;
   font-size: 12px;
   line-height: 20px;
   font-weight: 200;
@@ -1894,7 +1897,7 @@ html.white-suimodal .savings-onboarding.suimodal {
 }
 
 .savings-calculator.step-4b .funding:after {
-  content: '';
+  content: "";
   position: absolute;
   background-position-x: 100px;
   bottom: 20px;
@@ -1903,24 +1906,24 @@ html.white-suimodal .savings-onboarding.suimodal {
   height: 100%;
 }
 
-.savings-calculator.step-4b .onboarding-step>h2,
-.savings-calculator.step-4b .onboarding-step>h4 {
+.savings-calculator.step-4b .onboarding-step > h2,
+.savings-calculator.step-4b .onboarding-step > h4 {
   margin-bottom: 20px;
   text-align: center;
 }
 
-.savings-calculator.step-4b .onboarding-step>h2 {
+.savings-calculator.step-4b .onboarding-step > h2 {
   font-size: 20px;
   line-height: 27px;
   font-weight: bold;
-  color: #19233C;
+  color: #19233c;
 }
 
-.savings-calculator.step-4b .onboarding-step>h4 {
+.savings-calculator.step-4b .onboarding-step > h4 {
   font-weight: 300;
   font-size: 14px;
   line-height: 23px;
-  color: #746D6D;
+  color: #746d6d;
 }
 
 .savings-calculator.step-4b .swiper-savings-plan-container {
@@ -1996,12 +1999,12 @@ html.white-suimodal .savings-onboarding.suimodal {
   font-size: 35px;
   font-weight: bold;
   line-height: 57px;
-  color: #4F4848;
+  color: #4f4848;
 }
 
 .savings-calculator.step-4b .savings-plan .details {
   flex: 1;
-  border-top: 1px solid #E5E6EB;
+  border-top: 1px solid #e5e6eb;
   display: flex;
   padding-top: 10px;
 }
@@ -2009,32 +2012,32 @@ html.white-suimodal .savings-onboarding.suimodal {
 .savings-calculator.step-4b .savings-plan .details p {
   font-size: 14px;
   line-height: 23px;
-  color: #4F4848;
+  color: #4f4848;
 }
 
-.savings-calculator.step-4b .savings-plan .details>div {
+.savings-calculator.step-4b .savings-plan .details > div {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.savings-calculator.step-4b .savings-plan .details>div.left {
+.savings-calculator.step-4b .savings-plan .details > div.left {
   align-items: flex-start;
 }
 
-.savings-calculator.step-4b .savings-plan .details>div.right {
+.savings-calculator.step-4b .savings-plan .details > div.right {
   align-items: flex-end;
 }
 
-.savings-calculator.step-4b .savings-plan .details>div span:first-child {
-  color: #4F4848;
+.savings-calculator.step-4b .savings-plan .details > div span:first-child {
+  color: #4f4848;
   font-size: 14px;
   line-height: 23px;
   font-weight: 400;
 }
 
-.savings-calculator.step-4b .savings-plan .details>div span:last-child {
-  color: #4F4848;
+.savings-calculator.step-4b .savings-plan .details > div span:last-child {
+  color: #4f4848;
   font-size: 12px;
   line-height: 20px;
   font-weight: 200;
@@ -2058,16 +2061,15 @@ html.white-suimodal .savings-onboarding.suimodal {
 .savings-calculator.step-5 .final-step p {
   font-size: 16px;
   line-height: 145.23%;
-  color: #746D6D;
+  color: #746d6d;
 }
 
 .savings-calculator.step-5 .final-step p:first-child {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  color: #19233C;
+  color: #19233c;
 }
-
 
 .savings-calculator.step-5 .final-step .final-text-container {
   margin-bottom: 70px;
@@ -2089,10 +2091,10 @@ html.white-suimodal .savings-onboarding.suimodal {
 }
 
 #fcmb .onboarding-step label {
-    font-size: 14px;
-    line-height: 23px;
-    font-weight: 200;
-    color: #746d6d;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 200;
+  color: #746d6d;
 }
 
 #fcmb .onboarding-step input,
@@ -2148,7 +2150,7 @@ html.white-suimodal .savings-onboarding.suimodal {
     width: 100%;
   }
 
-  .awesome-features-content>div {
+  .awesome-features-content > div {
     flex: 1;
     padding: 20px;
   }
@@ -2163,7 +2165,10 @@ html.white-suimodal .savings-onboarding.suimodal {
 
   .user-stories {
     padding-top: 50px;
-    background: url("../img/watch.png") top 0 right 0px/160px no-repeat, url("../img/camera.png") top 650px left 0px/360px no-repeat, url("../img/set_goals.png") top 850px left 0px/650px no-repeat, url("../img/tape.png") bottom -80px right 0px/260px no-repeat;
+    background: url("../img/watch.png") top 0 right 0px/160px no-repeat,
+      url("../img/camera.png") top 650px left 0px/360px no-repeat,
+      url("../img/set_goals.png") top 850px left 0px/650px no-repeat,
+      url("../img/tape.png") bottom -80px right 0px/260px no-repeat;
   }
 
   .user-stories .user-story {
@@ -2175,15 +2180,15 @@ html.white-suimodal .savings-onboarding.suimodal {
     padding: 40px 20px;
   }
 
-  .subscription-box>div {
+  .subscription-box > div {
     flex: 1 0 50%;
   }
 
-  .subscription-box>div:first-child {
+  .subscription-box > div:first-child {
     flex: 1 0 100%;
   }
 
-  .subscription-box>div:last-child {
+  .subscription-box > div:last-child {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -2223,7 +2228,7 @@ html.white-suimodal .savings-onboarding.suimodal {
     line-height: 40px;
   }
 
-  .awesome-features-content>div {
+  .awesome-features-content > div {
     padding: 20px;
   }
 
@@ -2250,7 +2255,10 @@ html.white-suimodal .savings-onboarding.suimodal {
 
   .user-stories {
     padding-top: 50px;
-    background: url(../img/watch.png) top 10px right 0px/120px no-repeat, url(../img/camera.png) top 650px left 0px/260px no-repeat, url(../img/set_goals.png) top 850px left 0px/350px no-repeat, url(../img/tape.png) bottom -80px right 0px/260px no-repeat;
+    background: url(../img/watch.png) top 10px right 0px/120px no-repeat,
+      url(../img/camera.png) top 650px left 0px/260px no-repeat,
+      url(../img/set_goals.png) top 850px left 0px/350px no-repeat,
+      url(../img/tape.png) bottom -80px right 0px/260px no-repeat;
   }
 
   .user-stories-content {
@@ -2263,17 +2271,17 @@ html.white-suimodal .savings-onboarding.suimodal {
     margin-left: 5%;
   }
 
-  .subscription-box>div {
+  .subscription-box > div {
     flex: 1 0 100%;
   }
 
-  .subscription-box>div h3 {
+  .subscription-box > div h3 {
     font-size: 16px;
     text-align: center;
     line-height: 20px;
   }
 
-  .subscription-box>div:last-child {
+  .subscription-box > div:last-child {
     text-align: left;
     align-items: center;
     margin-top: 20px;
