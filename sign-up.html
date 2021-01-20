@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link href="css/main.css" rel="stylesheet" type="text/css" />
   <link href="css/semantic.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.7/components/icon.min.css">
   <link href="vendor/swiper/swiper.min.css" rel="stylesheet" type="text/css">
   <link href="vendor/datepicker/calendar.css" rel="stylesheet" type="text/css">
   <link href="css/main.css" rel="stylesheet" type="text/css">
@@ -18,7 +20,7 @@
     <div class="logo">
       <a href="/" class="">
         <img src="img/logo-white.png" />
-      </a>    
+      </a>
     </div>
     <div class="form-wrapper sign-up">
       <div class="form create-account">
@@ -62,40 +64,40 @@
 
     $(document).ready(function () {
 
-        $(".savings-type").on('click', function () {
-            $('.savings-onboarding').suimodal({
-                onHidden: function () {
-                    $('.savings-calculator.step-2').show();
-                    $('.savings-calculator.step-3').hide();
-                    return true;
-                }
-            }).suimodal('show');
-        });
+      $(".savings-type").on('click', function () {
+        $('.savings-onboarding').suimodal({
+          onHidden: function () {
+            $('.savings-calculator.step-2').show();
+            $('.savings-calculator.step-3').hide();
+            return true;
+          }
+        }).suimodal('show');
+      });
 
-        $(".onboarding-form button.back").on('click', function () {
-            $('.savings-onboarding').suimodal('hide');
-        });
+      $(".onboarding-form button.back").on('click', function () {
+        $('.savings-onboarding').suimodal('hide');
+      });
 
-        $('.savings-category').on('click', function () {
-            $('.savings-category.selected').removeClass('selected');
-            $(this).addClass('selected');
-        });
+      $('.savings-category').on('click', function () {
+        $('.savings-category.selected').removeClass('selected');
+        $(this).addClass('selected');
+      });
 
-        $('.onboarding-form button.next').on('click', function () {
-            $('.savings-calculator.step-2').fadeOut();
-            setTimeout(function () {
-                $('.savings-calculator.step-3').fadeIn();
-            }, 500);
-        });
+      $('.onboarding-form button.next').on('click', function () {
+        $('.savings-calculator.step-2').fadeOut();
+        setTimeout(function () {
+          $('.savings-calculator.step-3').fadeIn();
+        }, 500);
+      });
 
-        $('.savings-plans button.back').on('click', function () {
-            $('.savings-calculator.step-3').fadeOut();
-            setTimeout(function () {
-                $('.savings-calculator.step-2').fadeIn();
-            }, 500);
-        });
+      $('.savings-plans button.back').on('click', function () {
+        $('.savings-calculator.step-3').fadeOut();
+        setTimeout(function () {
+          $('.savings-calculator.step-2').fadeIn();
+        }, 500);
+      });
     });
-</script>
+  </script>
 </body>
 
 </html>
