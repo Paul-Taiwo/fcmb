@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link href="css/semantic.min.css" rel="stylesheet" type="text/css">
+  <link href="vendor/swiper/swiper.min.css" rel="stylesheet" type="text/css">
+  <link href="vendor/datepicker/calendar.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <title>Savings | Sign up</title>
+</head>
+
+<body id="onboarding">
+  <div class="wrapper">
+    <div class="logo">
+      <a href="/" class="">
+        <img src="img/logo-white.png" />
+      </a>    
+    </div>
+    <div class="form-wrapper sign-up">
+      <div class="form create-account">
+        <div class="wrap">
+          <h3>Create an account</h3>
+          <h5>Join lots of happy savers on Digital Savings today</h5>
+          <form>
+            <div class="form-group"><input type="text" class="form-control" placeholder="First name" /></div>
+            <div class="form-group"><input type="text" class="form-control" placeholder="Last name" /></div>
+            <div class="form-group"><input type="text" class="form-control" placeholder="Email address" /></div>
+            <div class="form-group"><input type="tel" class="form-control" placeholder="Phone Number" /></div>
+            <div class="form-group input-group">
+              <input type="text" class="form-control" placeholder="Password" />
+              <span> <img src="img/eye.svg" /> </span>
+            </div>
+
+            <div class="form-group">
+              <input type="submit" class="savings-type form-control btn btn-secondary" value="Create account" />
+            </div>
+          </form>
+          <h5>
+            By creating an account, you agree to our <a href="#">Terms</a><br />
+            Already have an account? <a href="login.html">Log in.</a>
+          </h5>
+        </div>
+      </div>
+
+      <div class="background">
+        <img src="img/savings-jar.svg" />
+        <h3>Achieve your savings <br />goals easily</h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="vendor/jquery.js"></script>
+  <script src="vendor/swiper/swiper.min.js" type="text/javascript"></script>
+  <script src="js/semantic.min.js"></script>
+  <script src="vendor/datepicker/calendar.js"></script>
+
+  <script>
+
+    $(document).ready(function () {
+
+        $(".savings-type").on('click', function () {
+            $('.savings-onboarding').suimodal({
+                onHidden: function () {
+                    $('.savings-calculator.step-2').show();
+                    $('.savings-calculator.step-3').hide();
+                    return true;
+                }
+            }).suimodal('show');
+        });
+
+        $(".onboarding-form button.back").on('click', function () {
+            $('.savings-onboarding').suimodal('hide');
+        });
+
+        $('.savings-category').on('click', function () {
+            $('.savings-category.selected').removeClass('selected');
+            $(this).addClass('selected');
+        });
+
+        $('.onboarding-form button.next').on('click', function () {
+            $('.savings-calculator.step-2').fadeOut();
+            setTimeout(function () {
+                $('.savings-calculator.step-3').fadeIn();
+            }, 500);
+        });
+
+        $('.savings-plans button.back').on('click', function () {
+            $('.savings-calculator.step-3').fadeOut();
+            setTimeout(function () {
+                $('.savings-calculator.step-2').fadeIn();
+            }, 500);
+        });
+    });
+</script>
+</body>
+
+</html>
