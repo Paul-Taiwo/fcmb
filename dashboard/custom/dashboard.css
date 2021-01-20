@@ -1,7 +1,7 @@
 @media (min-width: 1024px) {
-  #fcmb .savings-onboarding {
+  /* #fcmb .savings-onboarding {
     width: 1200px;
-  }
+  } */
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -39,6 +39,22 @@
   filter: alpha(opacity=30);
 }
 
+.ui.suimodal > .content {
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+
+#fcmb .lg-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 992px) {
+  #fcmb .lg-header {
+    display: inline !important;
+  }
+}
+
 #fcmb .savings-onboarding .buttons {
   text-align: right;
 }
@@ -70,7 +86,7 @@
 }
 
 #fcmb .savings-onboarding .savings-calculator {
-  padding: 40px;
+  padding: 21px;
 }
 
 #fcmb .savings-onboarding .savings-calculator .entry-content {
@@ -88,8 +104,9 @@
 }
 
 #fcmb .savings-onboarding .savings-calculator .savings-calculator-progress {
-  top: 80px;
+  top: 0;
   right: 60px;
+  padding: 20px 0 0 0 !important;
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
@@ -254,7 +271,7 @@
   left: 10px;
   width: 30px;
   height: 30px;
-  background: url(../img/unselected.svg) no-repeat;
+  background: url(../../img/unselected.svg) no-repeat;
 }
 
 .swiper-category-container .savings-category.selected {
@@ -266,7 +283,7 @@
 }
 
 .swiper-category-container .savings-category.selected::before {
-  background: url(../img/selected.svg) no-repeat;
+  background: url(../../img/selected.svg) no-repeat;
 }
 
 .swiper-category-container .savings-category.selected span {
@@ -423,7 +440,7 @@ html.white-modal .savings-onboarding.modal {
 }
 
 #fcmb .savings-calculator.step-3 .savings-plan.daily {
-  background-image: url("../img/bg-wave-yellow.svg");
+  background-image: url("../../img/bg-wave-yellow.svg");
 }
 
 #fcmb .savings-calculator.step-3 .savings-plan.daily .title .name {
@@ -432,7 +449,7 @@ html.white-modal .savings-onboarding.modal {
 }
 
 #fcmb .savings-calculator.step-3 .savings-plan.weekly {
-  background-image: url("../img/bg-wave-pink.svg");
+  background-image: url("../../img/bg-wave-pink.svg");
 }
 
 #fcmb .savings-calculator.step-3 .savings-plan.weekly .title .name {
@@ -441,7 +458,7 @@ html.white-modal .savings-onboarding.modal {
 }
 
 #fcmb .savings-calculator.step-3 .savings-plan.monthly {
-  background-image: url("../img/bg-wave-grey.svg");
+  background-image: url("../../img/bg-wave-grey.svg");
 }
 
 #fcmb .savings-calculator.step-3 .savings-plan.monthly .title .name {
@@ -505,6 +522,35 @@ html.white-modal .savings-onboarding.modal {
   font-size: 12px;
   line-height: 20px;
   font-weight: 200;
+}
+
+#fcmb .savings-calculator .savings-plan.selected {
+  background-color: #6e2b9f;
+}
+
+#fcmb .savings-calculator .savings-plan.selected::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 36px;
+  width: 30px;
+  height: 30px;
+  background: url("../../img/check-circle-line.svg") no-repeat;
+}
+
+#fcmb .savings-calculator .savings-plan.selected > .title .name,
+#fcmb .savings-calculator .savings-plan.selected > .title .amount,
+#fcmb .savings-plan.selected .details > div span:first-child,
+#fcmb .savings-plan.selected .details p {
+  color: #ffffff !important;
+}
+
+#fcmb .savings-calculator .savings-plan.selected > .title .name {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
+#fcmb .savings-plan.selected .details > div span:last-child {
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
 #fcmb .tertiary-text {

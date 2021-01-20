@@ -675,7 +675,7 @@
                         <div class="swiper-savings-plan-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide" style="width: auto !important;">
-                                    <div class="savings-plan daily">
+                                    <div class="savings-plan first daily">
                                         <div class="title">
                                             <span class="name">Daily Plan</span>
                                             <span class="amount">&#8358;778</span>
@@ -695,7 +695,7 @@
                                 </div>
 
                                 <div class="swiper-slide" style="width: auto !important;">
-                                    <div class="savings-plan weekly">
+                                    <div class="savings-plan first weekly">
                                         <div class="title">
                                             <span class="name">Weekly Plan</span>
                                             <span class="amount">&#8358;7,780</span>
@@ -715,7 +715,7 @@
                                 </div>
 
                                 <div class="swiper-slide" style="width: auto !important;">
-                                    <div class="savings-plan monthly">
+                                    <div class="savings-plan first monthly">
                                         <div class="title">
                                             <span class="name">Monthly Plan</span>
                                             <span class="amount">&#8358;77,008</span>
@@ -772,7 +772,7 @@
                             <div class="swiper-wrapper justify-content-md-center">
 
                                 <div class="swiper-slide" style="width: auto !important;">
-                                    <div class="savings-plan weekly">
+                                    <div class="savings-plan second weekly">
                                         <div class="title">
                                             <span class="name">Lockdown savings</span>
 
@@ -786,7 +786,7 @@
                                 </div>
 
                                 <div class="swiper-slide" style="width: auto !important;">
-                                    <div class="savings-plan monthly">
+                                    <div class="savings-plan second monthly">
                                         <div class="title">
                                             <span class="name">Flexible savings</span>
                                         </div>
@@ -836,7 +836,7 @@
                             <div class="swiper-wrapper justify-content-md-center">
 
                                 <div class="swiper-slide" style="width: auto !important;">
-                                    <div class="savings-plan weekly">
+                                    <div class="savings-plan card weekly">
                                         <div class="title">
                                             <span class="name">Debit Card</span>
 
@@ -848,7 +848,7 @@
                                 </div>
 
                                 <div class="swiper-slide" style="width: auto !important;">
-                                    <div class="savings-plan monthly">
+                                    <div class="savings-plan card monthly">
                                         <div class="title">
                                             <span class="name">FCMB Account</span>
                                         </div>
@@ -1169,6 +1169,21 @@
                 $(this).addClass('selected');
             });
 
+            $('.savings-plan.first').on('click', function () {
+                $('.savings-plan.first.selected').removeClass('selected');
+                $(this).addClass('selected');
+            });
+
+            $('.savings-plan.second').on('click', function () {
+                $('.savings-plan.second.selected').removeClass('selected');
+                $(this).addClass('selected');
+            });
+
+            $('.savings-plan.card').on('click', function () {
+                $('.savings-plan.card.selected').removeClass('selected');
+                $(this).addClass('selected');
+            });
+
             $('.onboarding-form button.next').on('click', function () {
                 $('.savings-calculator.step-2').fadeOut();
                 setTimeout(function () {
@@ -1320,7 +1335,7 @@
             })
 
 
-        })
+        });
     </script>
 
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->

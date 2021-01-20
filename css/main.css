@@ -1739,6 +1739,35 @@ html.white-suimodal .savings-onboarding.suimodal {
   height: 100%;
 }
 
+.savings-calculator .savings-plan.selected {
+  background-color: #6e2b9f !important;
+}
+
+.savings-calculator .savings-plan.selected::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 36px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/check-circle-line.svg") no-repeat;
+}
+
+.savings-calculator .savings-plan.selected > .title .name,
+.savings-calculator .savings-plan.selected > .title .amount,
+.savings-plan.selected .details > div span:first-child,
+.savings-plan.selected .details p {
+  color: #ffffff !important;
+}
+
+.savings-calculator .savings-plan.selected > .title .name {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.savings-plan.selected .details > div span:last-child {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
 .savings-calculator.step-4 .onboarding-step > h2,
 .savings-calculator.step-4 .onboarding-step > h4 {
   margin-bottom: 20px;
