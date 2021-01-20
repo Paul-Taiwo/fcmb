@@ -34,32 +34,37 @@
   <link rel="stylesheet" href="../css/main.css">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="../css/style.css"> -->
 
 </head>
 <style>
-
   .ui.dimmer.suimodals.page.transition.visible.active {
     background: white;
-}
-.suimodals.dimmer .ui.scrolling.suimodal {
+  }
+
+  .suimodals.dimmer .ui.scrolling.suimodal {
     margin: 1rem auto;
     box-shadow: none;
-}
+  }
+
   #fcmb .savings-card__button:hover {
     background: #F8F0F0 !important;
   }
+
   .savings-calculator.step-3 {
     display: block !important;
-}
-.content.savings-calculator.step-2 {
+  }
+
+  .content.savings-calculator.step-2 {
     /* margin: 100px 0; */
     height: 100vh !important;
-}
+  }
+
   #fcmb .swiper-category-container {
     width: 480px !important;
-}
+  }
+
   p.end-flexible {
     font-family: Inter;
     font-style: normal;
@@ -1599,7 +1604,7 @@
     </div>
 
   </div>
-  <!--End Modal-->o
+  <!--End Modal-->
   <!-- begin::Scroll Top -->
   <div id="m_scroll_tp" class="m-scroll-top"><i class="la la-arrow-up"></i></div>
 
@@ -1807,44 +1812,44 @@
     });
   </script>
 
-<script>
+  <script>
 
-  $(document).ready(function () {
+    $(document).ready(function () {
 
-    $(".savings-type").on('click', function () {
-      $('.savings-onboarding').suimodal({
-        onHidden: function () {
-          $('.savings-calculator.step-2').show();
-          $('.savings-calculator.step-3').hide();
-          return true;
-        }
-      }).suimodal('show');
+      $(".savings-type").on('click', function () {
+        $('.savings-onboarding').suimodal({
+          onHidden: function () {
+            $('.savings-calculator.step-2').show();
+            $('.savings-calculator.step-3').hide();
+            return true;
+          }
+        }).suimodal('show');
+      });
+
+      $(".onboarding-form button.back").on('click', function () {
+        $('.savings-onboarding').suimodal('hide');
+      });
+
+      $('.savings-category').on('click', function () {
+        $('.savings-category.selected').removeClass('selected');
+        $(this).addClass('selected');
+      });
+
+      $('.onboarding-form button.next').on('click', function () {
+        $('.savings-calculator.step-2').fadeOut();
+        setTimeout(function () {
+          $('.savings-calculator.step-3').fadeIn();
+        }, 500);
+      });
+
+      $('.savings-plans button.back').on('click', function () {
+        $('.savings-calculator.step-3').fadeOut();
+        setTimeout(function () {
+          $('.savings-calculator.step-2').fadeIn();
+        }, 500);
+      });
     });
-
-    $(".onboarding-form button.back").on('click', function () {
-      $('.savings-onboarding').suimodal('hide');
-    });
-
-    $('.savings-category').on('click', function () {
-      $('.savings-category.selected').removeClass('selected');
-      $(this).addClass('selected');
-    });
-
-    $('.onboarding-form button.next').on('click', function () {
-      $('.savings-calculator.step-2').fadeOut();
-      setTimeout(function () {
-        $('.savings-calculator.step-3').fadeIn();
-      }, 500);
-    });
-
-    $('.savings-plans button.back').on('click', function () {
-      $('.savings-calculator.step-3').fadeOut();
-      setTimeout(function () {
-        $('.savings-calculator.step-2').fadeIn();
-      }, 500);
-    });
-  });
-</script>
+  </script>
   <!-- end::Page Scripts -->
 
   <!-- end::Page Scripts -->
