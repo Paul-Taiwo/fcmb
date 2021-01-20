@@ -2068,15 +2068,6 @@ html.white-suimodal .savings-onboarding.suimodal {
   color: #19233C;
 }
 
-.savings-calculator.step-5 .final-step:after {
-  content: '';
-  position: absolute;
-  background-position-x: 100px;
-  bottom: 20px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
 .savings-calculator.step-5 .final-step .final-text-container {
   margin-bottom: 70px;
@@ -2088,13 +2079,29 @@ html.white-suimodal .savings-onboarding.suimodal {
 
 @media screen and (min-width: 768px) {
   .savings-calculator.step-5 .final-step .final-form-container {
-  width: 40%;
-}
+    width: 40%;
+  }
 }
 
 .savings-calculator.step-5 .final-step .final-form-container .ui.form .buttons {
   text-align: left;
   margin-top: 40px;
+}
+
+#fcmb .onboarding-step label {
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 200;
+    color: #746d6d;
+}
+
+#fcmb .onboarding-step input,
+#fcmb .onboarding-step select {
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #wrapper {
