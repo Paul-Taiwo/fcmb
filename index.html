@@ -414,6 +414,10 @@
                                 <button id="swiperbtnnext" class="swiper-button next"></button>
                             </div>
 
+                            <div class="swiper-button-prev-category">
+                                <button id="swiperbtnprev" class="swiper-button prev"></button>
+                            </div>
+
                             <div id="swipercatcon" class="swiper-wrapper">
                                 <div class="savings-category swiper-slide selected car" style="width: auto !important;">
                                     <div class="box">
@@ -1278,6 +1282,8 @@
             let swslider = document.getElementById('swipercatcon');
             let numbtnClick = 0;
             let nextbtn = document.getElementById('swiperbtnnext');
+            let prevbtn = document.getElementById('swiperbtnprev');
+
             nextbtn.addEventListener('click', function next() {
                 // slider.scrollLeft += 271.25;
                 if (numbtnClick < 6) {
@@ -1288,6 +1294,9 @@
                     numbtnClick = 0;
                     swslider.scrollLeft = 0;
                 }
+            })
+            prevbtn.addEventListener('click', function prev() {
+                swslider.scrollLeft -= 100;
             })
 
             // let navtoggler = document.getElementById('navtoggle')

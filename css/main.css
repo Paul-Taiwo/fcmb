@@ -201,8 +201,16 @@ a {
   right: 40px;
   cursor: pointer;
   transition: 0.2s all ease-in;
-  background: #ffffff url("../img/caret-right.svg") top 12px left 15px/10px no-repeat;
   outline: none !important;
+  background: #ffffff url("../img/caret-right.svg") top 12px left 15px/10px no-repeat;
+}
+
+.swiper-button.next {
+  background: #ffffff url("../img/caret-right.svg") top 12px left 15px/10px no-repeat;
+}
+
+.swiper-button.prev {
+  background: #ffffff url("../img/caret-left.svg") top 12px left 15px/10px no-repeat;
 }
 
 .swiper-button:hover {
@@ -1410,7 +1418,7 @@ background-position-y: 100px;
   height: auto;
   position: relative;
   overflow: hidden;
-  padding: 0 20px 0 0;
+  padding: 0 20px 0 20px;
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
@@ -1483,7 +1491,14 @@ background-position-y: 100px;
   box-shadow: 1px 7px 11px 0 #eaeaea;
   z-index: 5;
   top: 30px;
+}
+
+.swiper-category-container .swiper-button.next {
   right: 0;
+}
+
+.swiper-category-container .swiper-button.prev {
+  left: 0;
 }
 
 .swiper-category-container .swiper-button:hover {
@@ -1971,6 +1986,30 @@ html.white-suimodal .savings-onboarding.suimodal {
 @media (min-width: 768px) and (max-width: 1023px) {
   .savings-calculator.step-4b .swiper-savings-plan-container {
     width: 720px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .swiper-savings-plan-container {
+    height: unset !important;
+    margin-bottom: 50px;
+  }
+
+  .swiper-savings-plan-container .swiper-wrapper {
+    overflow-x: hidden;
+    flex-direction: column;
+  }
+
+  .swiper-savings-plan-container .swiper-wrapper .swiper-slide {
+    margin-bottom: 20px;
+    margin-right: 0px !important;
+    justify-content: center;
+    display: flex;
+    width: unset !important;
+  }
+
+  .swiper-savings-plan-container .swiper-wrapper .swiper-slide > .savings-plan {
+    margin-right: 0px !important;
   }
 }
 

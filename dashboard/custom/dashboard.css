@@ -69,6 +69,9 @@
   #fcmb .savings-onboarding {
     overflow-y: scroll;
   }
+  #fcmb .savings-onboarding::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 #fcmb .savings-onboarding .icon.close {
